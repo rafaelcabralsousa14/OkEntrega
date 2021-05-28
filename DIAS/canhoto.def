@@ -1,0 +1,21 @@
+res='1100x440'
+valida='380x16x720x148'
+assinatura='320x160x700x410'
+campos=('NOME DESTINATÁRIO' 'NOME RECEBEDOR' 'RG RECEBEDOR' 'PARENTESCO' 'NOTA FISCAL' 'PEDIDO' 'DATA/HORA ENTREGA')
+campos_compara=(5 4 6)
+campos_verifica=(1 2 3)
+campo[0]='26x78x320x102'
+campo[1]='26x250x320x278'
+alt[1]='26x278x320x308'
+campo[2]='156x282x320x306'
+alt[2]='156x308x320x338'
+campo[3]='140x312x320x336'
+alt[3]='140x338x320x368'
+override[3]='[ "${conteudo[0]}" == "${conteudo[1]}" ]'
+campo[4]='834x136x1070x160'
+regex[4]='s#([0-9]+)-([0-9]+)-([0-9]+)#\3#'
+campo[5]='794x166x1070x188'
+campo[6]='904x252x1070x278'
+regex[6]='s#([0-9]+)/0?([0-9]+)/([0-9]+) [0-9]+:[0-9]+#\1/\2/\3#'
+altcond='[ "${conteudo[1]}" == "NOME RECEBEDOR" ]'
+altcampos=(1 2 3)

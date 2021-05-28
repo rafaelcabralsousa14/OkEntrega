@@ -1,0 +1,17 @@
+res='792x420'
+valida='284x38x486x158'
+assinatura='230x160x560x380'
+campos=('Destinatário' 'Recebedor' 'RG do Recebedor' 'Dt. Entrega' 'Nota Fiscal' 'Pedido' 'Grau de Parentesco')
+campos_compara=(5 4 3)
+campos_verifica=(1 2 6)
+campo[0]='30x195x230x215'
+campo[1]='30x240x230x260'
+campo[2]='30x284x230x304'
+campo[3]='30x372x230x392'
+regex[3]='s#([0-9]+)/0?([0-9]+)/([0-9]+) [0-9]+:[0-9]+#\1/\2/20\3#'
+campo[4]='560x240x760x260'
+varia[4]='68 86'
+campo[5]='560x284x760x304'
+varia[5]='68 86'
+campo[6]='560x372x760x392'
+override[6]='[ "${conteudo[0]}" == "${conteudo[1]}" ]'

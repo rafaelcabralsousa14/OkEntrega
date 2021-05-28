@@ -1,0 +1,16 @@
+res='2630x1055'
+valida='1134x48x1620x260'
+assinatura='820x290x1880x880'
+campos=('NOME DESTINATÁRIO' 'NOME RECEBEDOR' 'DOCUMENTO RG' 'GRAU PARENTESCO' 'ORIG / CTE / NF' 'PEDIDO' 'DT. ENTREGA')
+campos_compara=(5 4 6)
+campos_verifica=(1 2 3)
+campo[0]='80x180x800x250'
+campo[1]='80x345x800x425'
+campo[2]='460x432x800x500'
+campo[3]='80x600x800x670'
+override[3]='[ "${conteudo[0]}" == "${conteudo[1]}" ] || [ "${conteudo[1]}" == "O MESMO" ]'
+campo[4]='1930x264x2560x340'
+regex[4]='s#([0-9]+)-([0-9]+)-([0-9]+)#\3#'
+campo[5]='2127x520x2560x580'
+campo[6]='2250x600x2560x660'
+regex[6]='s#([0-9]+)-0?([0-9]+)-([0-9]+)#\1/\2/\3#'

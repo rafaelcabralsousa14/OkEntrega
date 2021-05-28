@@ -1,0 +1,15 @@
+res='616x360'
+valida='0x0x154x38'
+assinatura='266x176x598x276'
+campos=('PEDIDO' 'NOTA' 'ENTREGA EM' 'RECEBEDOR' 'PARENTESCO' 'DOC')
+campos_compara=(0 1 2)
+campos_verifica=(3 5 4)
+campo[0]='88x134x200x152'
+varia[0]='90 17 29'
+campo[1]='88x114x200x132'
+varia[1]='32'
+campo[2]='388x154x520x172'
+regex[2]='s#([0-9]+)-0?([0-9]+)-([0-9]+) .*#\1/\2/\3#'
+campo[3]='388x96x570x114'
+campo[4]='388x114x520x134'
+campo[5]='388x134x520x152'

@@ -1,0 +1,17 @@
+res='940x529'
+valida='46x8x160x76'
+assinatura='300x310x730x364'
+campos=('NF' 'PEDIDO' 'ENTREGA' 'PARENTESCO' 'NOME' 'DOC')
+campos_compara=(1 0 2)
+campos_verifica=(4 5 3)
+campo[0]='42x78x920x112'
+regex[0]='s#.*NF: ([0-9]+) .*#\1#'
+campo[1]='42x78x920x112'
+regex[1]='s#.*PEDIDO: ([0-9]+)#\1#'
+campo[2]='42x232x920x268'
+regex[2]='s#ENTREGA: ([0-9]+)/0?([0-9]+)/([0-9]+).*#\1/\2/\3#'
+campo[3]='42x232x920x268'
+regex[3]='s#.*PARENTESCO: (.*)#\1#'
+campo[4]='288x388x920x418'
+campo[5]='288x418x920x448'
+regex[5]='s#.*: (.*)#\1#'

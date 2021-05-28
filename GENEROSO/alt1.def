@@ -1,0 +1,15 @@
+res='870x532'
+valida='10x10x196x72'
+assinatura='16x356x848x504'
+campos=('PEDIDOS' 'N FISCAIS' 'ENTREGA REALIZADA EM' 'RECEBEDOR' 'DOC' 'PARENT')
+campos_compara=(0 1 2)
+campos_verifica=(3 4 5)
+campo[0]='76x220x254x236'
+regex[0]='s#([0-9]+);?.*?\.\.\.#\1#'
+campo[1]='324x220x490x236'
+regex[1]='s#([0-9]+);?.*?\.\.\.#\1#'
+campo[2]='294x306x438x320'
+regex[2]='s#([0-9]+)/0?([0-9]+)/([0-9]+).*#\1/\2/20\3#'
+campo[3]='104x320x368x334'
+campo[4]='412x320x596x334'
+campo[5]='662x320x852x334'
